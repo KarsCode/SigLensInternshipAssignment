@@ -1,0 +1,156 @@
+Tested Cases
+
+# Test Case 1: Simple Transmission
+// Example input data
+vector<string> logs = {
+    "X1,Y1,00",
+    "Y1,Z1,24",
+    "X1,P1,40"
+};
+
+vector<string> initiallyInfected = {
+    "X1"
+};
+
+int contagiousPeriod = 48;
+
+---
+
+# Test Case 2: No Transmission (Isolated Case)
+// Example input data
+vector<string> logs = {
+    "A1,B1,50"
+};
+
+vector<string> initiallyInfected = {
+    "A1"
+};
+
+int contagiousPeriod = 48;
+
+---
+
+# Test Case 3: Infection Dies Out (Short Period)
+// Example input data
+vector<string> logs = {
+    "M1,N1,00",
+    "N1,O1,30",
+    "O1,P1,60"
+};
+
+vector<string> initiallyInfected = {
+    "M1"
+};
+
+int contagiousPeriod = 24;
+
+---
+
+# Test Case 4: Large-Scale Infection
+// Example input data
+vector<string> logs = {
+    "X1,Y1,00",
+    "Y1,Z1,10",
+    "Z1,A1,20",
+    "A1,B1,30",
+    "B1,C1,40",
+    "C1,D1,50"
+};
+
+vector<string> initiallyInfected = {
+    "X1"
+};
+
+int contagiousPeriod = 60;
+
+---
+
+# Test Case 5: Infection Loops Back
+// Example input data
+vector<string> logs = {
+    "A1,B1,00",
+    "B1,C1,20",
+    "C1,A1,40"
+};
+
+vector<string> initiallyInfected = {
+    "A1"
+};
+
+int contagiousPeriod = 48;
+
+---
+
+# Test Case 6: Multiple Initial Infections
+// Example input data
+vector<string> logs = {
+    "P1,Q1,10",
+    "Q1,R1,20",
+    "S1,T1,30",
+    "T1,U1,40"
+};
+
+vector<string> initiallyInfected = {
+    "P1", "S1"
+};
+
+int contagiousPeriod = 48;
+
+---
+
+# Test Case 7: Delayed Infection (Long Timestamp)
+// Example input data
+vector<string> logs = {
+    "X1,Y1,00",
+    "Y1,Z1,100",
+    "Z1,A1,200"
+};
+
+vector<string> initiallyInfected = {
+    "X1"
+};
+
+int contagiousPeriod = 50;
+
+---
+
+# Test Case 8: Chain Broken (Gap in Transmission)
+// Example input data
+vector<string> logs = {
+    "X1,Y1,00",
+    "Y1,Z1,24",
+    "Z1,A1,80"
+};
+
+vector<string> initiallyInfected = {
+    "X1"
+};
+
+int contagiousPeriod = 48;
+
+---
+
+# Test Case 9: Rapid Infection (Short Time Gaps)
+// Example input data
+vector<string> logs = {
+    "M1,N1,00",
+    "N1,O1,05",
+    "O1,P1,10",
+    "P1,Q1,15"
+};
+
+vector<string> initiallyInfected = {
+    "M1"
+};
+
+int contagiousPeriod = 20;
+
+---
+
+# Test Case 10: No Infections Recorded
+// Example input data
+vector<string> logs = {};
+
+vector<string> initiallyInfected = {};
+
+int contagiousPeriod = 48;
