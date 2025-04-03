@@ -21,7 +21,7 @@ The goal of this project is to simulate the spread of an infection based on inte
 The project is organized as follows:
 
 ```
-JOHN_DOE_1234_5678/
+KARTIK_SUBBARAM_220905298/
 ├── src/
 │   ├── main.cpp           # Entry point of the program
 │   ├── Logger.h           # Header file for log parsing
@@ -30,7 +30,7 @@ JOHN_DOE_1234_5678/
 │   ├── ContactTracer.cpp  # Implementation of contact tracing
 │   └── test_cases.txt     # Test cases for the program
 ├── bin/                   # Optional: Compiled binaries
-├── resume.pdf             # Your updated resume
+├── resume.pdf             # Updated resume
 └── README.md              # This file
 ```
 
